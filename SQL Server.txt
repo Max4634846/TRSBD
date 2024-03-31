@@ -1,0 +1,6 @@
+1)select concat(substring(ФИО,1,charindex(' ', фио)-1),' ',
+substring(фио,charindex(' ',фио)+1,1),'.',' ', 
+substring(фио,charindex(' ',фио,charindex(' ',фио)+1)+1,1), '.') as фамилия
+From Академики
+
+2)
